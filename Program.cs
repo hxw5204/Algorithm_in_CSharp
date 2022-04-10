@@ -11,10 +11,13 @@ namespace Algorithm_in_CSharp
     {
         static void Main(string[] args)
         {
-            int numOfInts = 100;
+            int numOfInts = 10000;
+            int min = 0;
+            int max = 100000;
             #region selection sort
-            int[] intArr = Helper.listGenerator(numOfInts);
+            int[] intArr = Helper.listGenerator(numOfInts, min, max);
             Console.WriteLine($"\n Selection Sort: ");
+            //Helper.printBefore(intArr,true);
             List<long> times = new List<long>();
             for(int i = 0; i<10; i++){
                 times.Add(selectionSortTester(intArr, false));
@@ -24,8 +27,9 @@ namespace Algorithm_in_CSharp
             #endregion
 
             #region bubble sort
-            intArr = Helper.listGenerator(numOfInts);
+            intArr = Helper.listGenerator(numOfInts, min, max);
             Console.WriteLine($"\n Bubble Sort: ");
+            //Helper.printBefore(intArr,true);
             List<long> times1 = new List<long>();
             for(int i = 0; i<10; i++){
                 times1.Add(bubbleSortTester(intArr, false));
@@ -34,19 +38,18 @@ namespace Algorithm_in_CSharp
             Console.WriteLine($"Bubble sort average time: {Helper.averageTime(times1.ToArray())}");
             #endregion
 
-            #region getOddTimesNum1
-            intArr = Helper.listGenerator(numOfInts);
-            Helper.printBefore(intArr,true);
-            Console.WriteLine($"\n getOddTimesNum1: ");
-            getOddTimesNum1Tester(intArr, true);
+            #region InsertionSort
+            intArr = Helper.listGenerator(numOfInts, min, max);
+            Console.WriteLine($"\n Insertion Sort: ");
+            //Helper.printBefore(intArr,true);
+            List<long> times2 = new List<long>();
+            for(int i = 0; i<10; i++){
+                times2.Add(insertionSortTester(intArr, false));
+            }
+
+            Console.WriteLine($"Insertion sort average time: {Helper.averageTime(times2.ToArray())}");
             #endregion
 
-            #region getOddTimesNum2
-            intArr = Helper.listGenerator(numOfInts);
-            Helper.printBefore(intArr,true);
-            Console.WriteLine($"\n getOddTimesNum2: ");
-            getOddTimesNum2Tester(intArr, true);
-            #endregion
         }
 
         public static long selectionSortTester(int[] intArr, bool printing){
@@ -71,12 +74,16 @@ namespace Algorithm_in_CSharp
             return elapsed_time;
         }
 
-        public static void getOddTimesNum1Tester(int[] intArr, bool printing){
-            EvenTimesOddTimes.getOddTimesNum1(intArr);
+        public static long insertionSortTester(int[] intArr, bool printing){
+            Helper.printBefore(intArr, printing);
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            Helper.printAfter(InsertionSort.insertionSort(intArr), printing);
+            stopwatch.Stop();
+            long elapsed_time = stopwatch.ElapsedMilliseconds;
+            if(printing){Console.WriteLine($"\nTime: {elapsed_time}");}
+            return elapsed_time;
         }
 
-        public static void getOddTimesNum2Tester(int[] intArr, bool printing){
-            EvenTimesOddTimes.getOddTimesNum2(intArr);
-        }
     }
 }

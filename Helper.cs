@@ -34,12 +34,13 @@ namespace Algorithm_in_CSharp
             */
         }
 
-        public static int[] listGenerator(int numOfInts){
+        public static int[] listGenerator(int numOfInts, int min, int max){
+            int[] ints = new int[numOfInts]; 
             Random rand = new Random();
-            int[] ints = Enumerable.Range(0, numOfInts)
-                                     .Select(i => new Tuple<int, int>(rand.Next(numOfInts), i))
-                                     .OrderBy(i => i.Item1)
-                                     .Select(i => i.Item2).ToArray();
+            for (int i = 0; i < ints.Length; i++)
+            {
+                ints[i] = rand.Next(min, max);
+            }
             return ints;
         }
 

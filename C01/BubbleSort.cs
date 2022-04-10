@@ -3,6 +3,7 @@ namespace Algorithm_in_CSharp.C01
 {
     public static class BubbleSort
     {
+        // O(N^2)
         public static int[] bubbleSort(int[] arr){
             if(arr == null || arr.Length < 2){
                 return arr;
