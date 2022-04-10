@@ -1,0 +1,16 @@
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\bin\Debug\net5.0\Algorithm_in_CSharp.exe
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\bin\Debug\net5.0\Algorithm_in_CSharp.deps.json
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\bin\Debug\net5.0\Algorithm_in_CSharp.runtimeconfig.json
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\bin\Debug\net5.0\Algorithm_in_CSharp.runtimeconfig.dev.json
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\bin\Debug\net5.0\Algorithm_in_CSharp.dll
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\bin\Debug\net5.0\ref\Algorithm_in_CSharp.dll
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\bin\Debug\net5.0\Algorithm_in_CSharp.pdb
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\Algorithm_in_CSharp.csproj.AssemblyReference.cache
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\Algorithm_in_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\Algorithm_in_CSharp.AssemblyInfoInputs.cache
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\Algorithm_in_CSharp.AssemblyInfo.cs
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\Algorithm_in_CSharp.csproj.CoreCompileInputs.cache
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\Algorithm_in_CSharp.dll
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\ref\Algorithm_in_CSharp.dll
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\Algorithm_in_CSharp.pdb
+C:\EpicSource\C#_temp\Algorithm_in_CSharp\obj\Debug\net5.0\Algorithm_in_CSharp.genruntimeconfig.cache
