@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
+using Algorithm_in_CSharp.Leetcode;
 
 namespace Algorithm_in_CSharp
 {
@@ -11,6 +12,7 @@ namespace Algorithm_in_CSharp
     {
         static void Main(string[] args)
         {
+            /*
             int numOfInts = 10000;
             int min = 0;
             int max = 100000;
@@ -49,7 +51,9 @@ namespace Algorithm_in_CSharp
 
             Console.WriteLine($"Insertion sort average time: {Helper.averageTime(times2.ToArray())}");
             #endregion
-
+            */
+            string s = "abcacbfe0205053041234567890abcdeabcdef";
+            Console.WriteLine(LengthOfLongestSubstring.lengthOfLongestSubstring(s));
         }
 
         public static long selectionSortTester(int[] intArr, bool printing){
