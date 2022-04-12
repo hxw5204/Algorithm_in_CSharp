@@ -44,7 +44,7 @@ namespace Algorithm_in_CSharp
             return ints;
         }
 
-        public static void printBefore(int[] intArr,bool printing){
+        public static void printBefore(double[] intArr,bool printing){
             if(printing == false){
                 return;
             }

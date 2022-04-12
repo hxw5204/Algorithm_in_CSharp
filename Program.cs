@@ -1,5 +1,6 @@
 ﻿using System;
 using Algorithm_in_CSharp.C01;
+using Algorithm_in_CSharp.C02;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,11 @@ namespace Algorithm_in_CSharp
     {
         static void Main(string[] args)
         {
-            /*
-            int numOfInts = 10000;
+            
+            int numOfInts = 1000000000;
             int min = 0;
-            int max = 100000;
+            int max = 1000000;
+            /*
             #region selection sort
             int[] intArr = Helper.listGenerator(numOfInts, min, max);
             Console.WriteLine($"\n Selection Sort: ");
@@ -52,10 +54,31 @@ namespace Algorithm_in_CSharp
             Console.WriteLine($"Insertion sort average time: {Helper.averageTime(times2.ToArray())}");
             #endregion
             */
-            string s = "abcacbfe0205053041234567890abcdeabcdef";
-            Console.WriteLine(LengthOfLongestSubstring.lengthOfLongestSubstring(s));
-        }
+            /*
+            #region findmax
+            int[] intArr = Helper.listGenerator(numOfInts, min, max);
+            //int[] intArr = new int[] {1,3,2,4,6,8,244,9};
+            Console.WriteLine($"\n find max: ");
+            //Helper.printBefore(intArr,true);
+            List<long> times = new List<long>();
+            List<long> times2 = new List<long>();
+            for(int i = 0; i<10; i++){
+                times.Add(findMax01Tester(intArr, false));
+                times2.Add(findMax02Tester(intArr, false));
+            }
 
+            Console.WriteLine($"find max 1 average time: {Helper.averageTime(times.ToArray())}");
+            Console.WriteLine($"find max 2 average time: {Helper.averageTime(times2.ToArray())}");
+            #endregion
+            */
+            int[] a = new int[] {1,3};
+            int[] b = new int[] {2};
+            Console.WriteLine(FindMedianSortedArrays.findMedianSortedArrays(a, b));
+
+            int[] c = {1,2}, d = {3,4};
+            Console.WriteLine(FindMedianSortedArrays.findMedianSortedArrays(c, d));
+        }
+        /*
         public static long selectionSortTester(int[] intArr, bool printing){
             Helper.printBefore(intArr, printing);
             var stopwatch = new Stopwatch();
@@ -89,5 +112,27 @@ namespace Algorithm_in_CSharp
             return elapsed_time;
         }
 
+        public static long findMax01Tester(int[] intArr, bool printing){
+            Helper.printBefore(intArr, printing);
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            Console.WriteLine($"01 max: {FindMax.findMax_1(intArr)}");
+            stopwatch.Stop();
+            long elapsed_time = stopwatch.ElapsedMilliseconds;
+            if(printing){Console.WriteLine($"\nTime: {elapsed_time}");}
+            return elapsed_time;
+        }
+
+        public static long findMax02Tester(int[] intArr, bool printing){
+            Helper.printBefore(intArr, printing);
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+            Console.WriteLine($"02 max: {FindMax.findMax_2(intArr)}");
+            stopwatch.Stop();
+            long elapsed_time = stopwatch.ElapsedMilliseconds;
+            if(printing){Console.WriteLine($"\nTime: {elapsed_time}");}
+            return elapsed_time;
+        }
+        */
     }
 }
