@@ -64,7 +64,6 @@ namespace Algorithm_in_CSharp.Leetcode
             }
             
             double median = isEven? (list[list.Length-1] + list[list.Length-2])/2 : list[list.Length-1];
-            Console.WriteLine("result: ");
             return median;
         }
     }
