@@ -71,12 +71,8 @@ namespace Algorithm_in_CSharp
             Console.WriteLine($"find max 2 average time: {Helper.averageTime(times2.ToArray())}");
             #endregion
             */
-            int[] a = new int[] {1,3};
-            int[] b = new int[] {2};
-            Console.WriteLine(FindMedianSortedArrays.findMedianSortedArrays(a, b));
-
-            int[] c = {1,2}, d = {3,4};
-            Console.WriteLine(FindMedianSortedArrays.findMedianSortedArrays(c, d));
+            string s = "babad";
+            Console.WriteLine(LongestPalindrome.longestPalindrome(s));
         }
         /*
         public static long selectionSortTester(int[] intArr, bool printing){
