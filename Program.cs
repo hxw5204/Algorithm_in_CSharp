@@ -71,8 +71,32 @@ namespace Algorithm_in_CSharp
             Console.WriteLine($"find max 2 average time: {Helper.averageTime(times2.ToArray())}");
             #endregion
             */
-            string s = "babad";
-            Console.WriteLine(LongestPalindrome.longestPalindrome(s));
+                    /**
+        13579
+        24680
+
+        1 5 9
+        24680
+        3 7
+
+        1  7
+        2 68
+        35 9
+        4  0
+
+        1   9
+        2  80
+        3 7
+        46
+        5
+
+        10:
+        r2 c5
+        r3 c5
+        r4 c4
+        */
+            string s = "1";
+            Console.WriteLine(ZigzagConversion.Convert(s,5));
         }
         /*
         public static long selectionSortTester(int[] intArr, bool printing){
