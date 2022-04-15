@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\haosen\\Desktop\\Algorithm_in_CSharp\\Algorithm_in_CSharp.csproj": {}
+    "C:\\EpicSource\\C#_temp\\Algorithm_in_CSharp\\Algorithm_in_CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\haosen\\Desktop\\Algorithm_in_CSharp\\Algorithm_in_CSharp.csproj": {
+    "C:\\EpicSource\\C#_temp\\Algorithm_in_CSharp\\Algorithm_in_CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\haosen\\Desktop\\Algorithm_in_CSharp\\Algorithm_in_CSharp.csproj",
+        "projectUniqueName": "C:\\EpicSource\\C#_temp\\Algorithm_in_CSharp\\Algorithm_in_CSharp.csproj",
         "projectName": "Algorithm_in_CSharp",
-        "projectPath": "C:\\Users\\haosen\\Desktop\\Algorithm_in_CSharp\\Algorithm_in_CSharp.csproj",
-        "packagesPath": "C:\\Users\\haosen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\haosen\\Desktop\\Algorithm_in_CSharp\\obj\\",
+        "projectPath": "C:\\EpicSource\\C#_temp\\Algorithm_in_CSharp\\Algorithm_in_CSharp.csproj",
+        "packagesPath": "C:\\Users\\hawang\\.nuget\\packages\\",
+        "outputPath": "C:\\EpicSource\\C#_temp\\Algorithm_in_CSharp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\haosen\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\hawang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

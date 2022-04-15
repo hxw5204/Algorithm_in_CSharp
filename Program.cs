@@ -13,11 +13,11 @@ namespace Algorithm_in_CSharp
     {
         static void Main(string[] args)
         {
-            
+            /*
             int numOfInts = 1000000000;
             int min = 0;
             int max = 1000000;
-            /*
+            
             #region selection sort
             int[] intArr = Helper.listGenerator(numOfInts, min, max);
             Console.WriteLine($"\n Selection Sort: ");
@@ -95,8 +95,8 @@ namespace Algorithm_in_CSharp
         r3 c5
         r4 c4
         */
-            string s = "1";
-            Console.WriteLine(ZigzagConversion.Convert(s,5));
+            string s = "abcdefghijklmn";
+            Console.WriteLine(ZigzagConversion.Convert(s,4));
         }
         /*
         public static long selectionSortTester(int[] intArr, bool printing){

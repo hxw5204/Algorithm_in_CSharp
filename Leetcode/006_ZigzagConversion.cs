@@ -23,58 +23,34 @@ namespace Algorithm_in_CSharp.Leetcode
         5
         */
         public static string Convert(string s, int numRows) {
-            if(s.Length == 1 || numRows == 1){
+            if(s.Length <= 1 || numRows == 1){
                 return s;
             }
-            int numColumns;
-            if(s.Length <= numRows){
-                numColumns = 1;
-            }else
-            {
-                int left = s.Length%(numRows*2-2);
-                int leftColumn = (left - numRows) <= 0? 1 : (left - numRows) + 1;
-                numColumns = (left == 0)? (s.Length/(numRows*2-2)) * (numRows-1) : (s.Length/(numRows*2-2)) * (numRows-1) + leftColumn;
-            }
-            char[,] pattern = new char[numRows, numColumns];
-            setArray(pattern, s, numRows);
-            return getString(pattern,s.Length);
-        }
-
-        public static void setArray(char[,] pattern, string s, int numRows){
-            int i = 0, j = 0;
+            int index = 0;
             bool down = true;
+            string[] ret = new string[numRows];
             foreach(char c in s){
-                pattern[i,j] = c;
+                ret[index] += c;
                 if(down == true){
-                    i++;
-                    if(i + 1 == numRows){
+                    if(index == numRows - 1){
+                        index--;
                         down = false;
+                    }
+                    else{
+                        index++;
                     }
                 }
                 else{
-                    i--;
-                    j++;
-                    if(i == 0){
+                    if(index == 0){
+                        index++;
                         down = true;
                     }
-                }
-            }
-        }
-
-        public static string getString(char[,] pattern, int stringLength){
-            string ret = "";
-
-            for(int i = 0; i < pattern.GetLength(0); i++){
-                for(int j = 0; j < pattern.GetLength(1); j++){
-                    if(pattern[i,j] != '\0'){
-                        ret += pattern[i,j];
-                        stringLength--;
-                        if(stringLength == 0){ return ret; }
+                    else{
+                        index--;
                     }
                 }
             }
-
-            return ret;
+            return string.Join("", ret);
         }
     }
 }
