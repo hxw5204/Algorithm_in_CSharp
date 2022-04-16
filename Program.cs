@@ -95,8 +95,10 @@ namespace Algorithm_in_CSharp
         r3 c5
         r4 c4
         */
-            string s = "abcdefghijklmn";
-            Console.WriteLine(ZigzagConversion.Convert(s,4));
+            //int s = 230;
+            //Console.WriteLine(ReverseInterger.Reverse(s));
+            int[] i = new int[]{1,2,3,4,5,67,8,9,10,11,12,13,14,15,16,17,18};
+            Console.WriteLine(TwoSum.twoSum(i,20));
         }
         /*
         public static long selectionSortTester(int[] intArr, bool printing){
