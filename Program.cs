@@ -71,34 +71,9 @@ namespace Algorithm_in_CSharp
             Console.WriteLine($"find max 2 average time: {Helper.averageTime(times2.ToArray())}");
             #endregion
             */
-                    /**
-        13579
-        24680
-
-        1 5 9
-        24680
-        3 7
-
-        1  7
-        2 68
-        35 9
-        4  0
-
-        1   9
-        2  80
-        3 7
-        46
-        5
-
-        10:
-        r2 c5
-        r3 c5
-        r4 c4
-        */
-            //int s = 230;
-            //Console.WriteLine(ReverseInterger.Reverse(s));
-            int[] i = new int[]{1,2,3,4,5,67,8,9,10,11,12,13,14,15,16,17,18};
-            Console.WriteLine(TwoSum.twoSum(i,20));
+              
+            
+            Console.WriteLine(-Math.Pow(2,31));
         }
         /*
         public static long selectionSortTester(int[] intArr, bool printing){

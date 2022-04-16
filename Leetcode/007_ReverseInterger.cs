@@ -23,37 +23,31 @@ namespace Algorithm_in_CSharp.Leetcode
 
             Constraints:
 
-            -231 <= x <= 231 - 1
+            -2^31 <= x <= 2^31 - 1
+            -2147483648 ~ 2147483647
         */
         public static int Reverse(int x) {
+            if(x <= -2147483648 || x >= 2147483647){ return 0;}
 
-            if(x == 0){return 0;}
-            char[] s = x.ToString().ToCharArray();
-            int i = 0;
-            if(x < 0){ i++; }
-            for(int j = s.GetLength(0)-1; i!=j; j--){
-                swap(s, i, j);
-                i++;
-                if(i==j){break;}
+            // prevent overflow
+            long num = 0;
+            int a = Math.Abs(x);
+
+            while(a != 0){
+                int temp = a % 10; // last digit
+                num = num * 10 + temp; // push temp to end of int
+                a = a/10; // remove last digit, until 0
             }
-            for(int j = s.GetLength(0)-1; i!=j; j--){
-                swap(s, i, j);
-                i++;
-                if(i==j){break;}
+            Console.WriteLine(Math.Pow(2,31)-1);
+            if(x > 0 && num < 2147483647){
+                return (int)num;
             }
-            int ret = int.Parse(string.Join("", s));
-            if(-231 <= ret || ret <= 230) {
-                return ret;
+            else if(x < 0 && num < 2147483648){
+                return (int)-num;
             }
             else{
                 return 0;
             }
-        }
-
-        public static void swap(char[] s, int i, int j){
-            char tmp = s[i];
-            s[i] = s[j];
-            s[j] = tmp;
         }
     }
 }
