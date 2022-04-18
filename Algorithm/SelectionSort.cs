@@ -1,5 +1,5 @@
 
-namespace Algorithm_in_CSharp.C01
+namespace Algorithm_in_CSharp.Algorithm
 {
     public static class SelectionSort
     {
