@@ -73,7 +73,7 @@ namespace Algorithm_in_CSharp
             */
               
             
-            Console.WriteLine(-Math.Pow(2,31));
+            MyAtoi.testing();
         }
         /*
         public static long selectionSortTester(int[] intArr, bool printing){
