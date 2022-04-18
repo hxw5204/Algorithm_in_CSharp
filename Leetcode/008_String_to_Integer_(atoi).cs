@@ -5,7 +5,7 @@ public static class MyAtoi {
     public static int myAtoi(string s) {
         int index = 0;
         int sign = 1;
-        if(s == "+1"){
+        if(s == "-91283472332"){
             Console.WriteLine("mark");
         }
         while(index<s.Length && s[index] == ' '){
@@ -31,10 +31,11 @@ public static class MyAtoi {
             if(sign > 0 && (res > int.MaxValue/10 || res *10 > (int.MaxValue - number)*sign)){
                 return int.MaxValue;
             }
-            else if(sign < 0 && (res < int.MinValue || res * 10 >= (int.MinValue - number) * sign)){
+            else if(sign < 0 && (res < int.MinValue/10 || res * 10 < (int.MinValue - number) * sign)){
                 return int.MinValue;
             }
-            res = res*10 + number;
+            res = res*10 + number*sign;
+            index++;
         }
         return res*sign;
     }
@@ -52,6 +53,7 @@ public static class MyAtoi {
         string s8 = "--21343423";
         string s9 = "+1";
         string s10 = "  00000000000000000012345678";
+        string s12 = "-91283472332";
         
         Console.WriteLine($"string: {s1}, return: {myAtoi(s1)}");
         Console.WriteLine($"string: {s2}, return: {myAtoi(s2)}");
@@ -64,5 +66,6 @@ public static class MyAtoi {
         Console.WriteLine($"string: {s9}, return: {myAtoi(s9)}");
         Console.WriteLine($"string: {s10}, return: {myAtoi(s10)}");
         Console.WriteLine($"string: {s11}, return: {myAtoi(s11)}");
+        Console.WriteLine($"string: {s12}, return: {myAtoi(s12)}");
     }
 }
