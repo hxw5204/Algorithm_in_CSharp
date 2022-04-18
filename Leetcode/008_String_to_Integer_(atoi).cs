@@ -37,7 +37,7 @@ public static class MyAtoi {
             res = res*10 + number*sign;
             index++;
         }
-        return res*sign;
+        return res;
     }
 
 
