@@ -1,5 +1,5 @@
 using System;
-using Algorithm_in_CSharp.C01;
+using Algorithm_in_CSharp.Algorithm;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,11 +44,11 @@ namespace Algorithm_in_CSharp
             return ints;
         }
 
-        public static void printBefore(double[] intArr,bool printing){
+        public static void printIntList(int[] intArr,bool printing){
             if(printing == false){
                 return;
             }
-            Console.WriteLine("Before");
+            Console.WriteLine("int list: ");
             foreach(int i in intArr)
             {
                 Console.Write($" {i}");
@@ -56,16 +56,8 @@ namespace Algorithm_in_CSharp
             Console.Write($"\n");
         }
 
-        public static void printAfter(int[] intArr, bool printing){
-            if(printing == false){
-                return;
-            }
-            Console.WriteLine("After");    
-            foreach(int i in intArr)
-            {
-                Console.Write($" {i}");
-            }
-            Console.Write($"\n");
+        public static void print(object item){
+            Console.WriteLine(item);
         }
 
         public static double averageTime(long[] times){
