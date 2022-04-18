@@ -73,7 +73,7 @@ namespace Algorithm_in_CSharp
             */
               
             
-            MyAtoi.testing();
+            IsPalindrome.testing();
         }
         /*
         public static long selectionSortTester(int[] intArr, bool printing){
