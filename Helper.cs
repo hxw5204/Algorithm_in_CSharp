@@ -44,10 +44,7 @@ namespace Algorithm_in_CSharp
             return ints;
         }
 
-        public static void printIntList(int[] intArr,bool printing){
-            if(printing == false){
-                return;
-            }
+        public static void printIntList(int[] intArr){
             Console.WriteLine("int list: ");
             foreach(int i in intArr)
             {

@@ -1,5 +1,5 @@
 using System;
-namespace Algorithm_in_CSharp.C01
+namespace Algorithm_in_CSharp.Algorithm
 {
     public static class EvenTimesOddTimes
     {

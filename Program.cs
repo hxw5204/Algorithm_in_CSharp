@@ -12,7 +12,9 @@ namespace Algorithm_in_CSharp
     {
         static void Main(string[] args)
         {
-            
+            MergeSort.testing();
+            ////////
+            QuickSort.testing();
         }
     }
 }
